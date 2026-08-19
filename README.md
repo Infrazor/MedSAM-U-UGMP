@@ -212,6 +212,9 @@ The repository should therefore be considered an implementation and study of the
 **MedSAM-U:**  
 *Uncertainty-Guided Auto Multi-Prompt Adaptation for Reliable MedSAM*
 
+Research paper:  
+https://arxiv.org/abs/2409.00924
+
 **MedSAM:**  
 *Segment Anything in Medical Images*
 
