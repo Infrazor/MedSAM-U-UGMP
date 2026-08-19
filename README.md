@@ -134,22 +134,49 @@ Run the notebook cells sequentially.
 
 ## 📊 Results
 
-The implementation produces multiple segmentation predictions from slightly different bounding-box prompts.
-
-The differences between these predictions are used to calculate an entropy-based uncertainty map.
-
-Higher uncertainty is mainly observed around regions where the segmentation changes between prompt variations, particularly near the target boundary.
-
-
+The UGMP implementation generated multiple segmentation predictions using
+slightly different bounding-box prompts. The resulting predictions were
+then used to study the variation in the segmentation and estimate
+pixel-level uncertainty.
 
 ### Segmentation Masks
 
+Five segmentation masks were generated, one for each perturbed bounding-box
+prompt.
+
 ![Segmentation Masks](results/segmentation_masks.png)
+
+The masks show how the predicted segmentation changes when the bounding-box
+prompt is slightly modified.
+
+### Probability Maps
+
+A probability map was generated for each of the five predictions.
+
+![Probability Maps](results/probability_maps.png)
+
+These probability maps provide the prediction information used for the
+subsequent uncertainty calculation.
 
 ### Uncertainty Map
 
+The probability information from the multiple predictions was used to
+calculate an entropy-based uncertainty map.
+
 ![Uncertainty Map](results/uncertainty_map.png)
 
+Higher uncertainty indicates regions where the predictions are less
+consistent across the different prompt variations.
+
+### Uncertainty Overlay
+
+The uncertainty map was also visualized over the original medical image.
+
+![Uncertainty Overlay](results/uncertainty_overlay.png)
+
+The uncertainty is mainly visible around regions where small changes in the
+prompt can cause changes in the predicted segmentation, particularly near
+the target boundary.
 ---
 
 ## 📐 Entropy-Based Uncertainty
