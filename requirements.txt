@@ -1,5 +1,9 @@
 numpy
 matplotlib
-torch
-scikit-image
+opencv-python
 Pillow
+scipy
+scikit-image
+torch
+torchvision
+tqdm
