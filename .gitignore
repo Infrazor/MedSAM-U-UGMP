@@ -2,55 +2,36 @@
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
 
 # Virtual environments
 venv/
 env/
 .venv/
-.env/
 
-# Jupyter Notebook
+# Jupyter
 .ipynb_checkpoints/
 
-# Google Colab
-.drive/
-content/
-
-# IDE / Editor
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
+# Google Colab / local files
 *.log
 
-# Temporary files
-*.tmp
-*.temp
-
-# Model checkpoints and weights
+# Large model checkpoints
 *.pth
 *.pt
 *.ckpt
-*.onnx
 
 # Large datasets
 data/
 dataset/
 datasets/
 
-# Generated outputs
-outputs/
-checkpoints/
-runs/
+# Temporary files
+*.tmp
+*.temp
 
-# Personal / secret files
-*.key
-*.pem
-*.secret
-secrets.*
-credentials.*
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
