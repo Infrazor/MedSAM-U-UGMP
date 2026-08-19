@@ -140,9 +140,7 @@ The differences between these predictions are used to calculate an entropy-based
 
 Higher uncertainty is mainly observed around regions where the segmentation changes between prompt variations, particularly near the target boundary.
 
-### Generated Bounding Boxes
 
-![Generated Bounding Boxes](results/generated_boxes.png)
 
 ### Segmentation Masks
 
